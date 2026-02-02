@@ -1,0 +1,192 @@
+    :root {
+      --bg: #541212;
+      --panel: rgba(255, 255, 255, 0.03);
+      --neon-pink: #ff4dd2;
+      --neon-blue: #33e0ff;
+      --neon-green: #7cff6a;
+      --neon-yellow: #ffd84d;
+      --muted: #ECEEDF;
+      --text: #ECEEDF;
+      --accent: #ECEEDF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background-image: url(img/bg.jpg);
+     background-position: center;
+     background-repeat: no-repeat;      
+      font-family: Inter, system-ui, Arial;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      width: 100%;
+      height: 100%;
+      max-width: 1000px;
+    }
+
+    .game {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 0 14px 50px rgba(2, 6, 23, 0.7);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    canvas {
+      width: 800px;
+      height: 500px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #06020f, #081226);
+      display: block;
+      image-rendering: pixelated;
+    }
+
+    .hud {
+      width: 800px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel {
+      width: 280px;
+      padding: 12px;
+      border-radius: 12px;
+      background: var(--panel);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      color: #000000;
+    }
+
+    .title {
+      font-weight: 900;
+      color: #ECEEDF;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .muted {
+      color: #ECEEDF;
+      font-size: 17px;
+      margin-top: 35px;
+    }
+
+    .stats {
+      display: flex;
+      margin-left: auto;
+      gap: 8px;
+      
+      border-radius: 10px;
+      margin-right: 5px;
+      text-align: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 800;
+      color: #ECEEDF;
+      text-align: center;
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 30px;
+    }
+
+    button {
+      background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+      border: none;
+      color: #ECEEDF;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .small {
+      font-size: 20px;
+      color: #ECEEDF;
+    }
+
+    .instructions {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #ECEEDF;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .power-label {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: 800;
+      color: #ECEEDF;
+    }
+
+    .neon-p {
+      background: linear-gradient(90deg, var(--neon-pink), #ff79d6);
+    }
+
+    .neon-b {
+      background: linear-gradient(90deg, var(--neon-blue), #80f2ff);
+    }
+
+    .neon-g {
+      background: linear-gradient(90deg, var(--neon-green), #b8ff8a);
+    }
+
+    .neon-y {
+      background: linear-gradient(90deg, var(--neon-yellow), #ffe595);
+    }
+
+    footer {
+      margin-top: 10px;
+      color: #ECEEDF;
+      font-size: 13px;
+    }
+
+    /* Additional classes for elements that had inline styles */
+    .controls-section {
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+
+    .power-ups-container {
+      margin-top: 6px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .small.margin-left {
+      margin-left: 8px;
+    }

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta author="Shadik Aiman">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neon Bricks — Retro Arcade</title>
+  <link rel="stylesheet" href="game2.css" />
+</head>
+
+<body>
+  <div class="frame">
+    <div class="game" role="application" aria-label="Neon Bricks arcade game">
+      <div class="hud">
+        <div class="stats">
+          <div class="stat" id="lives">LIVES: 3</div>
+          <div class="stat" id="score">SCORE: 0</div>
+          <div class="stat" id="level">LEVEL: 1</div>
+        </div>
+        <div class="stats">
+
+        </div>
+      </div>
+
+      <canvas id="canvas" width="800" height="600" tabindex="0"></canvas>
+
+      <footer>DEVELOP BY SHADIK AIMAN</footer>
+    </div>
+
+    <div class="panel" aria-hidden="false">
+      <div class="title">Neon Bricks</div>
+      <div class="muted">Classic brick breaker with neon visuals and power-ups. Clear all bricks to progress.</div>
+
+      <div class="controls-section">
+        <div class="small">Power ups by--Aiman</div>
+        <div class="power-ups-container">
+          <!--  <div class="power-label neon-p">MULTI-BALL</div>
+          <div class="power-label neon-b">LARGER PADDLE</div>
+          <div class="power-label neon-y">SPEED BOOST</div>
+        </div>-->
+        </div>
+
+
+
+        <div class="controls">
+          <button id="btnStart">Start</button>
+          <button id="btnPause">Pause</button>
+          <button id="btnReset">Reset</button>
+        </div>
+
+        <div class="instructions">
+          <strong>Controls</strong>
+          <ul>
+            <li>Keyboard: ← / → or A / D to move paddle</li>
+            <li>Spacebar or click/tap the canvas to launch the ball</li>
+            <li>Touch: drag paddle or tap to launch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game2.js"></script>
+</body>
+
+</html>
